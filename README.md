@@ -98,6 +98,27 @@ flowchart TD
     M --> N[GC Collect\n+ next shard]
 ```
 
+### Stage 2 – Normalize
+
+```mermaid
+flowchart TD
+    A[/"data/interim/products/\n*.parquet shards"/] --> B
+    C[/"data/reference/\nbrand_map.json"/] --> D["BrandResolver\nO(1) dict lookup"]
+
+    B["Load one shard\nat a time"]
+    B --> E["assign_category\ntitle + desc + hierarchy\n→ category + klass"]
+    B --> D
+    D --> F["Resolved brand\n(canonical name)"]
+    B --> G["price_tier\n< $25 → value\n$25–$75 → mid\n> $75 → premium"]
+
+    E --> H["Merge columns\npid, brand, category, klass\ngender, color, retail_price\nprice_tier, n_sizes, split, title"]
+    F --> H
+    G --> H
+
+    H --> I[/"data/interim/universal/\npart-XXXXX.parquet\n(universal elements)"/]
+    I --> J[Next shard]
+```
+
 ### Stage 3 – Intelligence (Brand Graph)
 
 ```mermaid
