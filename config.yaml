@@ -1,0 +1,39 @@
+# ============================================================
+# Pipeline configuration. Every stage reads paths/params here
+# so nothing scale-sensitive is hard-coded in the modules.
+# ============================================================
+
+paths:
+  raw_dir:        data/raw          # extracted JSON corpus (millions of files OR .jsonl shards)
+  interim_dir:    data/interim      # parquet intermediates written by each stage
+  processed_dir:  data/processed    # final artifacts (profiles, campaign, valuation)
+  reference_dir:  data/reference    # taxonomy + brand map
+  llm_inputs:     llm/inputs        # aggregates handed to an LLM (offline)
+  llm_outputs:    llm/outputs       # LLM responses saved back as artifacts
+
+ingest:
+  batch_size:     50000             # records per parquet row-group flush (keeps RAM flat)
+  glob_pattern:   "**/*.json"       # also supports "*.jsonl" shards (see stage01)
+  min_title_len:  3                 # drop junk records with no usable title
+
+split:
+  discovery_frac: 0.70              # Phase-1 (profile discovery) share
+  seed:           42                # deterministic hash split on retailerProductId
+
+brands:
+  min_items_real:   100             # below this an item-count => long-tail noise, dropped from brand intel
+  subbrand_min:     1000            # a sub-brand with >= this many items is kept as its own brand
+
+relationships:
+  bw1_weight:     1.0               # BOUGHT_WITH1 = "also bought" (strong)
+  bw2_weight:     0.35              # BOUGHT_WITH2 = "considered/liked" (weak)
+  min_edge_count: 3                 # prune brand<->brand edges seen fewer than this many times
+
+segmentation:
+  n_profiles:     12
+  random_state:   42
+
+valuation:
+  gross_margin:        0.45         # assumed blended apparel margin
+  base_annual_orders:  4.0          # baseline purchase events/yr before profile adjustment
+  offer_fatigue_decay: 0.92         # each successive weekly offer to a profile is worth a bit less

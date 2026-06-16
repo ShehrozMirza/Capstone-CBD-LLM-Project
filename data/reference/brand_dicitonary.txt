@@ -1,0 +1,544 @@
+# FUNCTIONS TO NORMALIZE BRAND NAMES
+
+
+brand_names_0 <- function(brand_list) {
+  brand_list[which(brand_list %in% c("1276503", "1280684", "1285128", "1285561", "1287130", "1238031", "1285561025XS", "1289001", "1299241", "1299242", "1299245"))] <- "UNDER ARMOR"
+  brand_list[which(brand_list %in% c("247 COMFORT APPAREL", "24SEVEN COMFORT APPAREL"))] <- "24SEVEN COMFORT APPAREL"
+  brand_list[which(brand_list %in% c("365 PRINTING", "365 PRINTING INC"))] <- "365 PRINTING" 
+  brand_list[which(brand_list %in% c("711ONELINESTORE", "711ONLINESTORE"))] <- "711 ONLINE STORE"
+  brand_list[which(brand_list %in% c("1STATE", "1STATE PANTS", "1STATE SKIRTS", "1STATE SWEATERS","1STATE TOPS BLOUSES", "1 STATE",
+                                     "1 STATE COATS JACKETS", "1 STATE PANTS", "1 STATE SWEATERS", "1 STATE TOPS BLOUSES", ""))] <- "1 STATE"
+  brand_list[which(brand_list %in% c("1 MADISON", "1 MADISON EXPEDITION"))] <- "1 MADISON"
+  brand_list[which(brand_list %in% c("365 PRINTING", "365PRINTING"))] <- "365 PRINTING"
+  brand_list[which(brand_list %in% c("3C CAMEL", "3C CAMEL HUAYU"))] <- "3C CAMEL"
+  brand_list[which(brand_list %in% c("4SI3NNA", "4SI3NNA TOPS BLOUSES"))] <- "4SI3NNA"
+  brand_list[which(brand_list %in% c("511 TACTICAL", "511 TACTICAL APPAREL", "511 TACTICAL INC", "511TACTICAL"))] <- "511 TACTICAL"
+  brand_list[which(brand_list %in% c("5TH OCEAN", "5TH OCEAN BY NEW ERA"))] <- "5TH OCEAN"
+  brand_list[which(brand_list %in% c("6 SHORE ROAD", "6 SHORE ROAD BY POOJA", "6 SHORE ROAD BY POOJA SWIMWEAR"))] <- "6 SHORE ROAD"
+  brand_list[which(brand_list %in% c("7 DIAMONDS","7 DIAMONDS CASUAL SHIRTS"))] <- "7 DIAMONDS"
+  brand_list[which(brand_list %in% c("7 FOR ALL MANKIND", "7FORALLMANKIND", "7 FOR ALL MANKIND JEANS"))] <- "7 FOR ALL MANKIND"
+  brand_list[which(brand_list %in% c("711 ONLINE STORE","711ONLINESTOR"))] <- "711 ONLINE STORE"
+  brand_list[which(brand_list %in% c("89TH AND MADISON", "89TH MADISON"))] <- "89TH AND MADISON"
+  brand_list[which(brand_list %in% c("90 DEGREE", "90 DEGREE BY REFLEX", "90 DEGREE BY REFLEX ACTIVEWEAR BOTTOMS", "90 DEGREES", "90 DEGREES BY REFLEX"))] <- "90 DEGREE"
+  return(brand_list)
+}
+
+
+brand_names_A <- function(brand_list) { 
+  brand_list[which(brand_list %in% c("ADIDAS", "ADIDAS ORIGINALS", "ADIDAS ACTIVEWEAR BOTTOMS", "ADIDAS ACTIVEWEAR TOPS", "ADIDAS GOLF",
+                                     "ADIDAS JEREMY SCOTT", "ADIDAS ORIGINALS BY ALEXANDER WANG", "ADIDAS OUTDOOR", "ADIDAS PERFORMANCE", 
+                                     "ADIDAS SPORTS BRAS", "ADIDAS SWEATERS", "ADIDAS TOPS BLOUSES", "ADIDAS STELLASPORT", "ADIDAS TSHIRTS", 
+                                     "ADIDAS X STELLA MCCARTNEY", "ADIDASORIGINALS", "ADIDAS BY STELLA MCCARTNEY","ADIDAS LOGO TRAINING TOP CLIMACOOL"))] <- "ADIDAS"
+  brand_list[which(brand_list %in% c("ALLURE", "ALLURE LEATHER", "ALLURE LINGERIE"))] <- "ALLURE" 
+  brand_list[which(brand_list %in% c("ABERCROMBIE", "ABERCROMBIE AND FITCH", "ABERCROMBIE FITCH"))] <- "ABERCROMBIE AND FITCH"
+  brand_list[which(brand_list %in% c("ABOUND", "ABOUND SWEATERS", "ABOUND TOPS BLOUSES"))] <- "ABOUND"
+  brand_list[which(brand_list %in% c("ABS", "ABS ALLEN SCHWARTZ", "ABS BY ALLEN SCHWARTZ"))] <- "ALLEN SCHWARTZ"
+  brand_list[which(brand_list %in% c("AFFINITAS INTIMATES", "AFFINITASUNIGRACE CORP"))] <- "AFFINITAS"
+  brand_list[which(brand_list %in% c("AGEN PROVOCATEUR","AGENT PROVOCATEUR"))] <- "AGENT PROVOCATEUR"
+  brand_list[which(brand_list %in% c("AGLOWW", "AGLOW"))] <- "AGLOW"
+  brand_list[which(brand_list %in% c("AIDAN AIDAN MATTOX","AIDAN BY AIDAN MATTOX", "AIDAN MATTOX"))] <- "AIDAN MATTOX"
+  brand_list[which(brand_list %in% c("AINIFEEL", "AINIFEEL QUILTEDCHAIN STRAP COLLECTION"))] <- "AINIFEEL"
+  brand_list[which(brand_list %in% c("AIR JORDAN"))] <- "NIKE"
+  brand_list[which(brand_list %in% c("AKU", "AKU NORTH AMERICA"))] <- "AKU"
+  brand_list[which(brand_list %in% c("ALBERTO MAKALI", "ALBERTO MAKALI SWEATERS"))] <- "ALBERTO MAKALI"
+  brand_list[which(brand_list %in% c("ALC", "ALC TOPS BLOUSES"))] <- "ALC"
+  brand_list[which(brand_list %in% c("ALEGRIA", "ALEGRIA BY PG LITE"))] <- "ALEGRIA"
+  brand_list[which(brand_list %in% c("ALEUMDR", "ALEUMDR SWIMWEAR"))] <- "ALEUMDR"
+  brand_list[which(brand_list %in% c("ALEX EVENINGS", "ALEX EVENINGS COATS JACKETS", "ALEX EVENINGS DRESSES", "ALEX EVENINGS SWEATERS", "ALEX EVENINGS TOPS BLOUSES"))] <- "ALEX EVENINGS"
+  brand_list[which(brand_list %in% c("ALEX PERRY", "ALEX PERRY BRIDE"))] <- "ALEX PERRY"
+  brand_list[which(brand_list %in% c("ALEXANDER JULIAN", "ALEXANDER JULIAN COLOURS"))] <- "ALEXANDER JULIAN"
+  brand_list[which(brand_list %in% c("ALFANI", "ALFANI CASUAL SHIRTS", "ALFANI COATS JACKETS", "ALFANI DRESS SHIRTS",
+                                     "ALFANI PANTS", "ALFANI RED", "ALFANI SKIRTS", "ALFANI SWEATERS", "ALFANI TOPS BLOUSES"))] <- "ALFANI"
+  brand_list[which(brand_list %in% c("ALFRED DUNNER", "ALFRED DUNNER COATS JACKETS", "ALFRED DUNNER PANTS", "ALFRED DUNNER SWEATERS", "ALFRED DUNNER TOPS BLOUSES"))] <- "ALFRED DUNNER"
+  brand_list[which(brand_list %in% c("ALICE OLIVIA", "ALICE OLIVIA JEANS"))] <- "ALICE OLIVIA"
+  brand_list[which(brand_list %in% c("ALISON ANDREWS", "ALISON ANDREWS TOPS BLOUSES"))] <- "ALISON ANDREWS"
+  brand_list[which(brand_list %in% c("ALLEGRA K", "ALLEGRA K TOPS BLOUSES"))] <- "ALLEGRA K"
+  brand_list[which(brand_list %in% c("ALLISON BRITTNEY", "ALLISON BRITTNEY SWEATERS"))] <- "ALLISON BRITTNEY"
+  brand_list[which(brand_list %in% c("AMALFI", "AMALFI BY RANGONI"))] <- "AMALFI BY RANGONI"
+  brand_list[which(brand_list %in% c("AMANDA CHELSEA", "AMANDA CHELSEA PANTS", "AMANDA CHELSEA SKIRTS", "AMANDA CHELSEA SUITS BLAZERS"))] <- "AMANDA CHELSEA"
+  brand_list[which(brand_list %in% c("AMANDA ROSE", "AMANDA ROSE COLLECTION"))] <- "AMANDA ROSE"
+  brand_list[which(brand_list %in% c("AMERICAN EAGLE", "AMERICAN EAGLE OUTFITTERS"))] <- "AMERICAN EAGLE"
+  brand_list[which(brand_list %in% c("AMERICAN FAVORITE TOOLS", "AMERICAN FAVORITE TOOLS INC"))] <- "AMERICAN FAVORITE TOOLS"
+  brand_list[which(brand_list %in% c("AMERICAN RAG", "AMERICAN RAG CASUAL SHIRTS", "AMERICAN RAG CIE", "AMERICAN RAG SWEATERS"))] <- "AMERICAN RAG"
+  brand_list[which(brand_list %in% c("AMINCO", "AMINCO INTERNATIONAL"))] <- "AMINCO"
+  brand_list[which(brand_list %in% c("ANN TAYLOR", "ANN TAYLOR LOFT", "ANN TAYLOR LOFT MATERNITY"))] <- "ANN TAYLOR"
+  brand_list[which(brand_list %in% c("ANNE KLEIN","ANNE KLEIN COATS JACKETS", "ANNE KLEIN PANTS", "ANNE KLEIN SKIRTS", "ANNE KLEIN SPORT", "ANNE KLEIN TOPS BLOUSES"))] <- "ANNE KLEIN"
+  brand_list[which(brand_list %in% c("ANNOUNCEMENT", "ANNOUNCEMENTS", "ANNOUNCEMENTS MATERNITY"))] <- "ANNOUNCEMENT"
+  brand_list[which(brand_list %in% c("ANORAK", "ANORAK COATS JACKETS"))] <- "ANORAK"
+  brand_list[which(brand_list %in% c("APT 9", "APT9"))] <- "APT 9"
+  brand_list[which(brand_list %in% c("ARAVON", "ARAVON BY NEW BALANCE"))] <- "ARAVON"
+  brand_list[which(brand_list %in% c("ARDYSS", "ARDYSS INTERNATIONAL"))] <- "ARDYSS"
+  brand_list[which(brand_list %in% c("ARIZONA JEANS", "ARIZONA JEAN CO"))] <- "ARIZONA JEANS"
+  brand_list[which(brand_list %in% c("ACTIVE", "ACTIVE BASIC", "ACTIVE USA"))] <- "ACTIVE"
+  brand_list[which(brand_list %in% c("ADAR", "ADAR MEDICAL", "ADAR UNIFORMS", "ADAR UNIVERSAL"))] <- "ADAR"
+  brand_list[which(brand_list %in% c("ALLURE", "ALLURE LEATHER", "ALLURE LINGERIE"))] <- "ALLURE"
+  brand_list[which(brand_list %in% c("ASOS DESIGN", "ASOS DESIGN X GLAAD"))] <- "ASOS DESIGN"
+  brand_list[which(brand_list %in% c("ASOS 4505"))] <- "ASOS 4505"
+  brand_list[which(brand_list %in% c("ASOS CURVE", "ASOS PLUS"))] <- "ASOS CURVE"
+  brand_list[which(brand_list %in% c("ASOS EDITION"))] <- "ASOS EDITION"
+  brand_list[which(brand_list %in% c("ASOS MAMALICIOUS", "ASOS MATERNITY", "ASOS MATERNITY PETITE", "ASOS MATERNITY TALL"))] <- "ASOS MATERNITY"
+  brand_list[which(brand_list %in% c("ASOS PETITE"))] <- "ASOS PETITE"
+  brand_list[which(brand_list %in% c("ASOS TALL"))] <- "ASOS TALL"
+  brand_list[which(brand_list %in% c("ASOS WHITE"))] <- "ASOS WHITE"
+  brand_list[which(brand_list %in% c("ASOS", "ASOS COLLECTION", "ASOS MADE IN KENYA"))] <- "ASOS"
+  brand_list[which(brand_list %in% c("ASTR", "ASTR THE LABEL"))] <- "ASTIR"
+  brand_list[which(brand_list %in% c("AUGUSTA", "AUGUSTA DROP SHIP", "AUGUSTA SPORTSWEAR"))] <- "AUGUSTA"
+  return(brand_list)
+}
+  
+  
+brand_names_B <- function(brand_list) {
+  brand_list[which(brand_list %in% c("THE BIG BANG THEORY", "BIG BANG THEORY"))] <- "BIG BANG THEORY"   
+  brand_list[which(brand_list %in% c("BCBG", "BCBGENERATION", "BCBGMAXAZRIA"))] <- "BCBG"
+  brand_list[which(brand_list %in% c("BIOWORLD", "BIOWORLD MERCHANDISING  INDEPENDENT SALES"))] <- "BIOWORLD"
+  brand_list[which(brand_list %in% c("BOSS", "BOSS ORANGE BY HUGO BOSS", "BOSS HUGO BOSS"))] <- "HUGO BOSS"
+  brand_list[which(brand_list %in% c("BTEMPTD", "BTEMPTD BY WACOAL"))] <- "BTEMPTD"
+  return(brand_list)
+}
+
+
+brand_names_C <- function(brand_list) {
+  brand_list[which(brand_list %in% c("CALVIN KLEIN COLLECTION", "CALVIN KLEIN DRESS SHIRTS", "CALVIN KLEIN GOLF", "CALVIN KLEIN HOSIERY", "CALVIN KLEIN COATS JACKETS", 
+                                     "CALVIN KLEIN CALVIN KLEIN", "CALVIN KLEIN", "CALVIN KLEIN BEAUTY", "CALVIN KLEIN 205W39NYC", "CALVIN KLEIN JEANS", 
+                                     "CALVIN KLEIN MODERN COTTON", "CALVIN KLEIN PERFORMANCE", "CALVIN KLEIN JEANS EST 1978", "CALVIN KLEIN KHAKIS",
+                                     "CALVIN KLEIN PANTS", "CALVIN KLEIN PERFORMANCE PLUS", "CALVIN KLEIN PERFORMANCE WOMENS ACTIVEWEAR",
+                                     "CALVIN KLEIN PLUS", "CALVIN KLEIN STEEL", "CALVIN KLEIN SUITS SUIT SEPARATES", "CALVIN KLEIN SWEATERS",
+                                     "CALVIN KLEIN TIES", "CALVIN KLEIN TOPS BLOUSES", "CALVIN KLEIN UNDERWEAR", "CALVINKLEIN"))] <- "CALVIN KLEIN"
+  brand_list[which(brand_list %in% c("CELEBRITY PINK", "CELEBRITY PINK2253 APPAREL INC", "CELEBRITYPINK"))] <- "CELEBRITY PINK"
+  brand_list[which(brand_list %in% c("CDICOUNT", "CDICT"))] <- "CDI COUNT"
+  brand_list[which(brand_list %in% c("CHI CHI LONDON", "CHI CHI LONDON PETITE", "CHI CHI LONDON PLUS", "CHI CHI LONDON TALL"))] <- "CHI CHI LONDON"
+  brand_list[which(brand_list %in% c("CHIC", "CHIC CLASSIC COLLECTION", "CHICMODA"))] <- "CHIC"
+  brand_list[which(brand_list %in% c("CLARKS", "CLARKS ARTISAN"))] <- "CLARKS"
+  brand_list[which(brand_list %in% c("CLIMATE RIGHT BY CUDDL DUDS", "CLIMATERIGHT", "CLIMATERIGHT BY CUDDL DUDS"))] <- "CLIMATE RIGHT"
+  brand_list[which(brand_list %in% c("CLOSET", "CLOSET PLUS"))] <- "CLOSET"
+  brand_list[which(brand_list %in% c("COAST", "COAST PLUS"))] <- "COAST"
+  brand_list[which(brand_list %in% c("COACH", "COACH 1941"))] <- "COACH"
+  brand_list[which(brand_list %in% c("CONNECTED", "CONNECTED APPAREL"))] <- "CONNECTED"
+  brand_list[which(brand_list %in% c("CRAZY DOG FUNNY TSHIRTS", "CRAZY DOG TSHIRTS"))] <- "CRAZY DOG TSHIRTS"
+  brand_list[which(brand_list %in% c("CREATIVE APPAREL", "CREATIVE APPAREL CONCEPT INC", "CREATIVE APPAREL CONCEPTS"))] <- "CREATIVE APPAREL"
+  return(brand_list)
+}  
+ 
+ 
+brand_names_D <- function(brand_list) {
+  brand_list[which(brand_list %in% c("DONNA SORENTO", "DONNA SORRENTO"))] <- "DONNA SORRENTO" 
+  brand_list[which(brand_list %in% c("DG2 BY DIANE GILMAN", "DG2 DIANE GILMAN", "DG2BYDIANEGILMAN"))] <- "DG2"
+  brand_list[which(brand_list %in% c("DAISY STREET", "DAISY STREET PLUS"))] <- "DAISY STREET"
+  return(brand_list)
+}
+
+
+brand_names_F <- function(brand_list) {  
+  brand_list[which(brand_list %in% c("EN CREME", "EN CRÈME"))] <- "EN CREME"
+  brand_list[which(brand_list %in% c("ESSENTAIL BASIC", "ESSENTIAL BASIC"))] <- "ESSENTIAL BASIC"
+  brand_list[which(brand_list %in% c("FITBEST", "FITIBEST"))] <- "FITBEST"
+  brand_list[which(brand_list %in% c("FMR SLHRVIB", "FMRSLHRVIB", "FMRSLRHVIB"))] <- "FMR SLHRVIB"
+  brand_list[which(brand_list %in% c("F E L L A"))] <-  "FELLA"
+  brand_list[which(brand_list %in% c("F F", "FF", "FF GARMENTS" ))] <- "FF"
+  brand_list[which(brand_list %in% c("FAJA MIA", "FAJA COLOMBIANA" ))] <- "FAJA COLOMBIANA"
+  brand_list[which(brand_list %in% c("FAME AND PARTNERS DRESSES", "FAME PARTNERS", "FAME AND PARTNERS"))] <- "FAME AND PARTNERS"
+  brand_list[which(brand_list %in% c("FAMOUS STAR AND STRAPS", "FAMOUS STARS AND STRAPS"))] <- "FAMOUS STARS AND STRAPS"
+  brand_list[which(brand_list %in% c("FANATICS AUTHENTIC", "FANATICS BRANDED", "FANATICS"))] <- "FANATICS"
+  brand_list[which(brand_list %in% c("FASHION FORM", "FASHION FORMS"))] <- "FASHION FORMS"
+  brand_list[which(brand_list %in% c("FAST AND FURIOUS", "FAST AND THE FURIOUS"))] <- "FAST AND FURIOUS"
+  brand_list[which(brand_list %in% c("FEMINIQUE BREAST FORMS", "FEMINIQUE"))] <- "FEMINIQUE"
+  brand_list[which(brand_list %in% c("FIFA WOMENS WORLD CUP FRANCE 2019", "FIFA WORLD CUP", "FIFA" ))] <- "FIFA"
+  brand_list[which(brand_list %in% c("FILA SPORT","FILA" ))] <- "FILA"
+  brand_list[which(brand_list %in% c("FINEJEWELERS COLLECTION", "FINEJEWELERS"))] <- "FINEJEWELERS"
+  brand_list[which(brand_list %in% c("FIRST KICK MATERNITY", "FIRST KICK" ))] <- "FIRST KICK"
+  brand_list[which(brand_list %in% c("FIRST MANUFACTURING COMPANY INC", "FIRST MANUFACTURING"))] <- "FIRST MANUFACTURING"
+  brand_list[which(brand_list %in% c("FLUTTER KICK", "FLUTTER KICK MATERNITY", "FLUTTER AND KICK"))] <- "FLUTTER AND KICK"
+  brand_list[which(brand_list %in% c("FOR LOVE AND LEMONS", "FOR LOVE LEMONS"))] <- "FOR LOVE AND LEMONS"
+  brand_list[which(brand_list %in% c("FORPLAY LINGERIE", "FORPLAY"))] <- "FORPLAY"
+  brand_list[which(brand_list %in% c("FORSYTH OF CANADA DRESS SHIRTS", "FORSYTH OF CANADA"))] <- "FORSYTH OF CANADA"
+  brand_list[which(brand_list %in% c("FOXCROFT TOPS BLOUSES", "FOXCROFT NYC", "FOXCROFT"))] <- "FOXCROFT"
+  brand_list[which(brand_list %in% c("FRAGILE", "FRAGILE MATERNITY"))] <- "FRAGILE"
+  brand_list[which(brand_list %in% c("FRANKIES BIKINIS", "FRANKIES"))] <- "FRANKIES"
+  brand_list[which(brand_list %in% c("FRANKLIN MARSHALL", "FRANKLIN AND MARSHALL"))] <- "FRANKLIN AND MARSHALL"
+  brand_list[which(brand_list %in% c("FRANKLIN SPORTS", "FRANKLIN"))] <- "FRANKLIN"
+  brand_list[which(brand_list %in% c("FREE PEOPLE COATS JACKETS", "FREE PEOPLE DRESSES", "FREE PEOPLE INTIMATELY", "FREE PEOPLE JEANS", "FREE PEOPLE JUMPSUITS ROMPERS", 
+                                     "FREE PEOPLE LEGGINGS", "FREE PEOPLE PANTS", "FREE PEOPLE SHORTS", "FREE PEOPLE SKIRTS", "FREE PEOPLE SWEATERS", "FREE PEOPLE TOPS BLOUSES", "FREE PEOPLE"))] <- "FREE PEOPLE"
+  brand_list[which(brand_list %in% c("FREE PRESS PANTS", "FREE PRESS TOPS BLOUSES", "FREE PRESS"))] <- "FREE PRESS"
+  brand_list[which(brand_list %in% c("FREE TO LIVE TOPS BLOUSES", "FREE TO LIVE"))] <- "FREE TO LIVE"
+  brand_list[which(brand_list %in% c("FRENCH CONNECTION DRESSES", "FRENCH CONNECTION JUMPSUITS ROMPERS", "FRENCH CONNECTION SKIRTS", "FRENCH CONNECTION SKIRTS", "FRENCH CONNECTION"))] <- "FRENCH CONNECTION"
+  brand_list[which(brand_list %in% c("FROCK AND FRILL PETITE", "FROCK AND FRILL PLUS", "FROCK AND FRILL TALL", "FROCK AND FRILL"))] <- "FROCK AND FRILL"
+  brand_list[which(brand_list %in% c("FUJI SPORTS", "FUJI"))] <- "FUJI"
+  brand_list[which(brand_list %in% c("FUNMUM MATERNITY", "FUNMUM"))] <- "FUNMUM"
+  return(brand_list)
+} 
+ 
+  
+brand_names_G <- function(brand_list) {  
+  brand_list[which(brand_list %in% c("G20WORLD20INTIMATES", "G WORLD INTIMATES", "G WORLD INTIMATESEAST COAST INTIMATE", "G WORLD LINGERIE", "G WORLD"))] <- "G WORLD"
+  brand_list[which(brand_list %in% c("GAP 1969", "GAP BODY", "GAP FACTORY", "GAP FIT", "GAP GAPFIT", "GAP MATERNITY", "GAPFIT", "GAPMATERNITY", "GAP"))] <- "GAP"
+  brand_list[which(brand_list %in% c("GBYGUESS", "G BY GUESS"))] <- "G BY GUESS"
+  brand_list[which(brand_list %in% c("GH BASS CO CASUAL SHIRTS","GH BASS CO SHORTS", "GHBASS", "GH BASS CO"))] <- "GH BASS CO"
+  brand_list[which(brand_list %in% c("GIANI BERNINI", "GIANI BERNINI GIANI BERNINI"))] <- "GIANI BERNINI"
+  brand_list[which(brand_list %in% c("GIFTSNBEYOND"))] <- "GIFTS N BEYOND"
+  brand_list[which(brand_list %in% c("GILDAN DRYBLEND", "GILDAN HEAVY COTTON", "GILDAN INC", "GILDAN OR CUSTOM", "GILDAN PREMIUM WEIGHT","GILDANANVILJERZEE", "GILDANJERZEESHANES", "GILDANVARIES", "GILDAN"))] <- "GILDAN"
+  brand_list[which(brand_list %in% c("GILLIAN OMALLEY", "GILLIGAN AND OMALLEY"))] <- "GILLIAN AND OMALLEY"
+  brand_list[which(brand_list %in% c("GO COUTURE TOPS BLOUSES", "GO COUTURE"))] <- "GO COUTURE"
+  brand_list[which(brand_list %in% c("GO CUSTOM", "GOCUSTOM"))] <- "GO CUSTOM"
+  brand_list[which(brand_list %in% c("GRAVITYCHECK", "GRAVITY CHECK"))] <- "GRAVITY CHECK"
+  brand_list[which(brand_list %in% c("GREAT EXPECTATIONS", "GREAT EXPECTATIONS GARANIMALS", "GREAT EXPECTATIONS MATERNITY"))] <- "GREAT EXPECTATIONS"
+  brand_list[which(brand_list %in% c("GREAT NORTHWEST", "GREAT NORTHWEST CLOTHING COMPANY", "GREAT NORTHWEST INDIGO"))] <- "GREAT NORTHWEST"
+  brand_list[which(brand_list %in% c("GREGNORMAN", "GREG NORMAN ACTIVEWEAR TOPS", "GREG NORMAN FOR TASSO ELBA", "GREG NORMAN"))] <- "GREG NORMAN"
+  brand_list[which(brand_list %in% c("GRLFRND DENIM", "GRLFRND"))] <- "GRLFRND"
+  brand_list[which(brand_list %in% c("GUCCI", "GUCCI GUCCI"))] <- "GUCCI"
+  brand_list[which(brand_list %in% c("GUESS BY MARCIANO", "GUESS CASUAL SHIRTS", "GUESS COATS JACKETS", "GUESS COLLECTION", "GUESS FACTORY", "GUESS JEANS", "GUESS JUMPSUITS ROMPERS", 
+                                      "GUESS JUMPSUITS ROMPERS", "GUESS SKIRTS", "GUESS SWEATERS", "GUESS TOPS BLOUSES", ""))] <- "GUESS"
+  brand_list[which(brand_list %in% c("GUINNESS", "GUINNESS OFFICIAL MERCHANDISE"))] <- "GUINNESS"
+  brand_list[which(brand_list %in% c("GYPSIES MOONDUST","GYPSIES MOONDUST SWEATERS", "GYPSIES MOONDUST TOPS BLOUSES"))] <- "GYPSIES MOONDUST"
+  return(brand_list)
+}
+
+  
+brand_names_H <- function(brand_list) {  
+  brand_list[which(brand_list %in% c("H BY BORDEAUX", "H BY BORDEAUX SWEATERS", "H BY BORDEAUX TOPS BLOUSES"))] <- "H BY BORDEAUX"
+  brand_list[which(brand_list %in% c("HALF MOON ACTIVE", "HALF MOON"))] <- "HALF MOON"
+  brand_list[which(brand_list %in% c("HALOGEN COATS JACKETS", "HALOGEN PANTS", "HALOGEN SKIRTS", "HALOGEN SUITS BLAZERS", "HALOGEN SWEATERS", "HALOGEN TOPS BLOUSES", "HALOGEN"))] <- "HALOGEN"
+  brand_list[which(brand_list %in% c("HALSTON", "HALSTON HERITAGE", "HALSTON SKIRTS", "HALSTON TOPS BLOUSES"))] <- "HALSTON"
+  brand_list[which(brand_list %in% c("HANES", "HANES ALIVE", "HANES HER WAY", "HANES PREMIUM", "HANES SPORT", "HANES ULTIMATE", "HANES WOMENS", "HANESBRANDS INC" ))] <- "HANES"
+  brand_list[which(brand_list %in% c("HARLEYDAVIDSON", "HARLEY DAVIDSON"))] <- "HARLEY DAVIDSON"
+  brand_list[which(brand_list %in% c("HARLOWE GRAHAM PANTS", "HARLOWE GRAHAM TOPS BLOUSES", "HARLOWE GRAHAM"))] <- "HARLOWE GRAHAM"
+  brand_list[which(brand_list %in% c("HAUTE HIPPIE TOPS BLOUSES", "HAUTE HIPPIE"))] <- "HAUTE HIPPIE"
+  brand_list[which(brand_list %in% c("HEAVENLY SECRETS", "HEAVENLY SECRETS SHAPEWEAR"))] <- "HEAVENLY SECRETS"
+  brand_list[which(brand_list %in% c("HEIDI BY HEIDI KLUMBENDON USA INC", "HEIDI BY HEIDI KLUM", "HEIDI KLUM", "HEIDI KLUM INTIMATES", "HEIDI KLUM SWIM", "HEIDIKLUM"))] <- "HEIDI KLUM"
+  brand_list[which(brand_list %in% c("HELLY HANSEN WORKWEAR", "HELLY HANSEN"))] <- "HELLY HANSEN"
+  brand_list[which(brand_list %in% c("HEMANT NANDITA", "HEMANT AND NANDITA"))] <- "HEMANT AND NANDITA"
+  brand_list[which(brand_list %in% c("HENRY SEGAL CO", "HENRY SEGAL"))] <- "HENRY SEGAL"
+  brand_list[which(brand_list %in% c("HIATUS PANTS", "HIATUS TOPS BLOUSES", "HIATUS"))] <- "HIATUS"
+  brand_list[which(brand_list %in% c("HILFIGER", "HILFIGER DENIM"))] <- "TOMMY HILFIGER"
+  brand_list[which(brand_list %in% c("HINGE SWEATERS", "HINGE TOPS BLOUSES", "HINGE"))] <- "HINGE"
+  brand_list[which(brand_list %in% c("HONEYDEW INTIMATES", "HONEYDEW SLEEPWEAR ROBES", "HONEYDEW"))] <- "HONEYDEW"
+  brand_list[which(brand_list %in% c("HOPE AND IVY MATERNITY", "HOPE IVY", "HOPE AND IVY"))] <- "HOPE AND IVY"
+  brand_list[which(brand_list %in% c("HOTKISS INTIMATES", "HOTKISS"))] <- "HOTKISS"
+  brand_list[which(brand_list %in% c("HOUSE OF HARLOW 1960", "HOUSE OF HARLOW"))] <- "HOUSE OF HARLOW"
+  brand_list[which(brand_list %in% c("HUGO BOSS BLACK", "HUGO BY HUGO BOSS", "HUGO BOSS"))] <- "HUGO BOSS"
+  brand_list[which(brand_list %in% c("HUIYUZHI SWIMWEAR", "HUIYUZHI"))] <- "HUIYUZHI"
+  brand_list[which(brand_list %in% c("HUK", "HUK PERFORMANCE FISHING"))] <- "HUK"
+  brand_list[which(brand_list %in% c("HULAHONEY", "HULA HONEY"))] <- "HULA HONEY"
+  brand_list[which(brand_list %in% c("HURLEY CASUAL SHIRTS", "HURLEY SWIMWEAR", "HURLEY"))] <- "HURLEY"
+  return(brand_list)
+}  
+  
+  
+brand_names_I <- function(brand_list) {
+  brand_list[which(brand_list %in% c("ICOLLECTION LINGERIE", "ICOLLECTION20LINGERIE", "ICOLLECTION"))] <- "ICOLLECTION"
+  brand_list[which(brand_list %in% c("IDEOLOGY COATS JACKETS", "IDEOLOGY SWEATERS", "IDEOLOGY"))] <- "IDEOLOGY"
+  brand_list[which(brand_list %in% c("IGENJUN TOPS BLOUSES", "IGENJUN"))] <- "IGENJUN"
+  brand_list[which(brand_list %in% c("INTERNATIONAL CONCEPTS", "INRTERNATIONAL CONCEPTS", "INCINTERNATIONALCONCEPTS", "INC CASUAL SHIRTS", "INC DRESS SHIRTS", "INC INTERNATIONAL", 
+                                     "INC INTERNATIONAL CONCEPT", "INC INTERNATIONAL CONCEPTS", "INC INTERNATIONAL CONCEPTS INC INTERNATIONAL CONCEPTS", "INC", 
+                                     "INC INTERNATIONAL CONCEPTS WOMAN", "INC JEANS", "INC SHORTS", "INC SLEEPWEAR ROBES", "INC SWEATERS", "INC TOPS BLOUSES", "INC INTERNATIONAL"))] <- "INC INTERNATIONAL"
+  brand_list[which(brand_list %in% c("INDEPENDENT TRADING CO", "INDEPENDENT TRADING COMPANY", "INDEPENDENT TRADING"))] <- "INDEPENDENT TRADING"
+  brand_list[which(brand_list %in% c("INDERA THERMALS", "INDERA"))] <- "INDERA"
+  brand_list[which(brand_list %in% c("INDIGO BLUE MATERNITY", "INDIGO BLUE"))] <- "INDIGO BLUE"
+  brand_list[which(brand_list %in% c("ISABEL BY INGRID AND ISABEL", "ISABEL INGRID", "ISABEL MATERNITY", "ISABEL MATERNITY BY INGRID ISABEL", "INGRID ISABEL", "INGRID ISABEL MATERNITY", "INGRID MATERNITY", "INGRIDISABEL", "INGRID AND ISABEL"))] <- "INGRID AND ISABEL"
+  brand_list[which(brand_list %in% c("INTERSTATEAPPARELINC", "INTERSTATE APPAREL"))] <- "INTERSTATE APPAREL"
+  brand_list[which(brand_list %in% c("IVANKA TRUMP ACTIVE", "IVANKA TRUMP TOPS BLOUSES", "IVANKA TRUMP"))] <- "IVANKA TRUMP"
+  brand_list[which(brand_list %in% c("IZOD", "IZOD GOLF", "IZOD ADVANTAGE PERFORMANCE STRIPED POLO", "IZOD MOVEMENT", "IZOD PANTS", "IZOD SWEATERS", "IZOD",
+                                     "IZOD CASUAL SHIRTS", "IZOD COATS JACKETS", "IZOD EXCLUSIVE", "IZOD LACOSTE"))] <- "IZOD"
+  return(brand_list)
+}
+  
+  
+brand_names_J <- function(brand_list) {
+  brand_list[which(brand_list %in% c("JM COLLECTION", "JM COLLECTION PETITES"))] <- "JM COLLECTION"
+  brand_list[which(brand_list %in% c("J BRAND MATERNITY", "J BRAND"))] <- "J BRAND"
+  brand_list[which(brand_list %in% c("JCREW", "J CREW PANTS", "J CREW SWEATERS", "J CREW TOPS BLOUSES", "J CREW"))] <- "J CREW"
+  brand_list[which(brand_list %in% c("JACK20ADAMS20GROUP", "JACK ADAMS GROUP", "JACK ADAMS USA", "JACK ADAMS"))] <- "JACK ADAMS"
+  brand_list[which(brand_list %in% c("JAG JEANS", "JAG JEANS PANTS", "JAG JEANS SHORTS", "JAG PANTS", "JAG SPORT", "JAG SWIMWEAR", "JAG"))] <- "JAG"
+  brand_list[which(brand_list %in% c("JANE BLEECKER", "JANEANDBLEECKER", "JANE AND BLEECKER"))] <- "JANE AND BLEECKER"
+  brand_list[which(brand_list %in% c("JANTZEN SWIMWEAR", "JANTZEN"))] <- "JANTZEN"
+  brand_list[which(brand_list %in% c("JAPANESE WEEKEND JWO", "JAPANESE WEEKEND JWO", "JAPANESE WEEKEND"))] <- "JAPANESE WEEKEND"
+  brand_list[which(brand_list %in% c("JASON MAXWELL SPORT", "JASON MAXWELL"))] <- "JASON MAXWELL"
+  brand_list[which(brand_list %in% c("JEANNE PIERRE SWEATERS", "JEANNE PIERRE"))] <- "JEANNE PIERRE"
+  brand_list[which(brand_list %in% c("JESSICA HOWARD COATS JACKETS", "JESSICA HOWARD DRESSES", "JESSICA HOWARD SWEATERS", "JESSICA HOWARD"))] <- "JESSICA HOWARD"
+  brand_list[which(brand_list %in% c("JESSICA SIMPSON FASHION", "JESSICA SIMPSON JEANS", "JESSICA SIMPSON MATERNITY", "JESSICA SIMPSON SWEATERS", "JESSICA SIMPSON SWIMWEAR", 
+                                     "JESSICA SIMPSON THE WARM UP", "JESSICA SIMPSON TOPS BLOUSES", "JESSICA SIMPSON"))] <- "JESSICA SIMPSON"
+  brand_list[which(brand_list %in% c("JIL SANDER NAVY", "JIL SANDER"))] <- "JIL SANDER"
+  brand_list[which(brand_list %in% c("JM COLLECTION PANTS", "JM COLLECTION PETITES", "JM COLLECTION TOPS BLOUSES", "JM COLLECTION"))] <- "JM COLLECTION"
+  brand_list[which(brand_list %in% c("JOAN RIVERS CLASSICS COLLECTION", "JOAN RIVERS"))] <- "JOAN RIVERS"
+  brand_list[which(brand_list %in% c("JOCKEY ACTIVE", "JOCKEY LIFE", "JOCKEY SCRUBS", "JOCKEY SLEEPWEAR", "JOCKEYREG SCRUBS", "JOCKEY"))] <- "JOCKEY"
+  brand_list[which(brand_list %in% c("JOHN JENN COATS JACKETS", "JOHN JENN SWEATERS", "JOHN JENN"))] <- "JOHN JENN"
+  brand_list[which(brand_list %in% c("JOHNPAULRICHARD", "JOHN PAUL RICHARD PANTS", "JOHN PAUL RICHARD TOPS BLOUSES", "JOHN PAUL RICHARD"))] <- "JOHN PAUL RICHARD"
+  brand_list[which(brand_list %in% c("JOHN VARVATOS STAR USA", "JOHN VARVATOS COLLECTION", "JOHN VARVATOS"))] <- "JOHN VARVATOS"
+  brand_list[which(brand_list %in% c("JOIE SWEATERS", "JOIE TOPS BLOUSES", "JOIE"))] <- "JOIE"
+  brand_list[which(brand_list %in% c("JOS A BANKS", "JOS A BANK"))] <- "JOS A BANK"
+  brand_list[which(brand_list %in% c("JULESJIM", "JULES JIM MATERNITY", "JULES JIM", "JULES AND JIM"))] <- "JULES AND JIM"
+  brand_list[which(brand_list %in% c("JUST SEXY INTIMATES", "JUST SEXY LINGERIE", "JUST SEXY"))] <- "JUST SEXY"
+  return(brand_list)
+}
+
+  
+brand_names_K <- function(brand_list) {
+  brand_list[which(brand_list %in% c("JWANDERSON", "JW ANDERSON"))] <- "JW ANDERSON"
+  brand_list[which(brand_list %in% c("KAREN SCOTT SWEATERS", "KAREN SCOTT TOPS BLOUSES", "KAREN SCOTTEDIBY DESIGN", "KAREN SCOTTMMG", "KARENSCOTT", "KAREN SCOTT"))] <- "KAREN SCOTT"
+  brand_list[which(brand_list %in% c("KASPER COATS JACKETS", "KASPER DRESSES", "KASPER PANTS", "KASPER SKIRTS", "KASPER SUITS BLAZERS", "KASPER SWEATERS", "KASPER TOPS BLOUSES", "KASPER"))] <- "KASPER"
+  brand_list[which(brand_list %in% c("KATE SPADE NEW YORK", "KATE SPADE NEW YORK KATE SPADE NEW YORK", "KATE SPADE SKIRTS", "KATE SPADE SWEATERS", "KATE SPADE SWIMWEAR", "KATESPADE", "KATE SPADE"))] <- "KATE SPADE"
+  brand_list[which(brand_list %in% c("KENDALL KYLIE", "KENDALL KYLIE FOR WALMART", "KENDALL KYLIE TOPS BLOUSES", "KENDALL AND KYLIE"))] <- "KENDALL AND KYLIE"
+  brand_list[which(brand_list %in% c("KENNETH COLE COATS JACKETS", "KENNETH COLE NEW YORK", "KENNETH COLE PANTS", "KENNETH COLE REACTION", "KENNETH COLE REACTION CASUAL SHIRTS", 
+                                     "KENNETH COLE REACTION PANTS", "KENNETH COLE REACTION SUITS SUIT SEPARATES", "KENNETH COLE REACTION SWEATERS", "KENNETH COLE REACTION SWIMWEAR", 
+                                     "KENNETH COLE REACTION TIES", "KENNETH COLE SWIMWEAR", "KENNETH COLE UNLISTED", "UNLISTED BY KENNETH COLE", "UNLISTED"))] <- "KENNETH COLE"
+  brand_list[which(brand_list %in% c("KENSIE GIRL", "KENSIE JEANS", "KENSIE"))] <- "KENSIE"
+  brand_list[which(brand_list %in% c("KG KURT GEIGER", "KG BY KURT GEIGER"))] <- "KG BY KURT GEIGER"
+  brand_list[which(brand_list %in% c("KHOMBU SANDAL", "KHOMBU"))] <- "KHOMBU"
+  brand_list[which(brand_list %in% c("KIDDANGEROUS", "KID DANGEROUS"))] <- "KID DANGEROUS"
+  brand_list[which(brand_list %in% c("KIMI KAI MATERNITY", "KIMI KAI"))] <- "KIMI KAI"
+  brand_list[which(brand_list %in% c("KINGS ROAD MERCH", "KINGS ROAD MERCHANDISE", "KINGS ROAD"))] <- "KINGS ROAD"
+  brand_list[which(brand_list %in% c("KIRKLAND SIGNATURE", "KIRKLAND SIGNATURE MENS", "KIRKLANDSIGNATURE", "KIRKLAND"))] <- "KIRKLAND"
+  brand_list[which(brand_list %in% c("KLOGS FOOTWEAR", "KLOGS USA", "KLOGS"))] <- "KLOGS"
+  brand_list[which(brand_list %in% c("KNOW ONE CARES SKIRTS", "KNOW ONE CARES COATS JACKETS", "KNOWONECARES SKIRTS", "KNOW ONE CARES"))] <- "KNOW ONE CARES"
+  brand_list[which(brand_list %in% c("KOBI HALPERIN COATS JACKETS", "KOBIHALPERIN", "KOBI HALPERIN"))] <- "KOBI HALPERIN"
+  brand_list[which(brand_list %in% c("KOMARKIDS", "KOMAR KIDS"))] <- "KOMAR KIDS"
+  brand_list[which(brand_list %in% c("KR STRIKEFORCE BOWLING SHOES", "KR STRIKEFORCE"))] <- "KR STRIKEFORCE"
+  brand_list[which(brand_list %in% c("KURT GEIGER LONDON", "KURT GEIGER"))] <- "KURT GEIGER"
+  brand_list[which(brand_list %in% c("KUT FROM THE KLOTH JEANS", "KUTFROMTHEKLOTH", "KUT FROM THE KLOTH"))] <- "KUT FROM THE KLOTH"
+  return(brand_list)
+}
+  
+  
+brand_names_L <- function(brand_list) {  
+  brand_list[which(brand_list %in% c("LA LECHE LEAGUE INTERNATIONAL", "LA LECHE LEAGUE"))] <- "LA LECHE LEAGUE"
+  brand_list[which(brand_list %in% c("LA REDOUTE COLLECTIONS", "LA REDOUTE"))] <- "LA REDOUTE"
+  brand_list[which(brand_list %in% c("LADY PRINCESS INTIMATES", "LADY PRINCESS"))] <- "LADY PRINCESS"
+  brand_list[which(brand_list %in% c("LAFAYETTE 148 NEW YORK", "LAFAYETTE 148 PANTS", "LAFAYETTE 148 TOPS BLOUSES", "LAFAYETTE 148"))] <- "LAFAYETTE 148"
+  brand_list[which(brand_list %in% c("LAKAI LIMITED FOOTWEAR MENS", "LAKAI"))] <- "LAKAI"
+  brand_list[which(brand_list %in% c("LAMAZE WOMENS IA", "LAMAZE"))] <- "LAMAZE"
+  brand_list[which(brand_list %in% c("LANNACLOTHESDESIGN"))] <- "LANNA CLOTHES DESIGN"
+  brand_list[which(brand_list %in% c("LANYJEWELRY"))] <- "LANY JEWELRY"
+  brand_list[which(brand_list %in% c("LARRY LEVINE COATS JACKETS", "LARRY LEVINE"))] <- "LARRY LEVINE"
+  brand_list[which(brand_list %in% c("LAUNDRY BY SHELLI SEGAL DRESSES", "LAUNDRY BY SHELLI SEGAL SWIMWEAR", "LAUNDRY BY SHELLI SEGAL"))] <- "LAUNDRY BY SHELLI SEGAL"
+  brand_list[which(brand_list %in% c("LAURA GARCIA COLLECTION", "LAURA GARCIA"))] <- "LAURA GARCIA"
+  brand_list[which(brand_list %in% c("LE SUIT COATS JACKETS", "LE SUIT SUITS BLAZERS", "LE SUIT"))] <- "LE SUIT"
+  brand_list[which(brand_list %in% c("LE VIAN LE VIAN", "LE VIAN"))] <- "LE VIAN"
+  brand_list[which(brand_list %in% c("LEADING LADY BRAS BRA SETS", "LEADING LADY"))] <- "LEADING LADY"
+  brand_list[which(brand_list %in% c("LEG AVENUE INC", "LEG AVENUE"))] <- "LEG AVENUE"
+  brand_list[which(brand_list %in% c("LEITH JUMPSUITS ROMPERS", "LEITH PANTS", "LEITH SKIRTS", "LEITH SWEATERS", "LEITH SWIMWEAR", "LEITH TOPS BLOUSES", "LEITH"))] <- "LEITH"
+  brand_list[which(brand_list %in% c("LEO NICOLE SWEATERS", "LEO NICOLE TOPS BLOUSES", "LEO NICOLE"))] <- "LEO NICOLE"
+  brand_list[which(brand_list %in% c("LETARTE SWIMWEAR", "LETARTE"))] <- "LETARTE"
+  brand_list[which(brand_list %in% c("LETO COLLECTION", "LETO"))] <- "LETO"
+  brand_list[which(brand_list %in% c("LETRELL SPORTS", "LETOILE SPORT"))] <- "LETOILE SPORT"
+  brand_list[which(brand_list %in% c("LEVI STRAUSS", "LEVI STRAUSS CO", "LEVIS JEANS", "LEVIS", "LEVIS JEANS SIGNATURE GOLD BY LEVI STRAUSS", "LEVIS PREMIUM", "LEVIS SIGNATURE GOLD BY LEVI STRAUSS", "LEVIS STRAUSS CO", "LEVI"))] <- "LEVI"
+  brand_list[which(brand_list %in% c("LEWIT PANTS", "LEWIT SKIRTS", "LEWIT SWEATERS", "LEWIT TOPS BLOUSES", "LEWIT"))] <- "LEWIT"
+  brand_list[which(brand_list %in% c("LIFE FITNESS APPAREL", "LIFE FITNESS"))] <- "LIFE FITNESS"
+  brand_list[which(brand_list %in% c("LILAC CLOTHING", "LILAC MATERNITY", "LILAC"))] <- "LILAC"
+  brand_list[which(brand_list %in% c("LILY WHITE TOPS BLOUSES", "LILY WHITE"))] <- "LILY WHITE"
+  brand_list[which(brand_list %in% c("LINDA LEAL TOPS BLOUSES", "LINDA LEAL"))] <- "LINDA LEAL"
+  brand_list[which(brand_list %in% c("LINE DOT TOPS BLOUSES", "LINE DOT"))] <- "LINE DOT"
+  brand_list[which(brand_list %in% c("LIQUIDO ACTIVE", "LIQUIDO"))] <- "LIQUIDO"
+  brand_list[which(brand_list %in% c("LIQUOR  POKER PLUS", "LIQUOR N POKER PLUS"))] <- "LIQUOR N POKER"
+  brand_list[which(brand_list %in% c("LISA RINNA COLLECTION", "LISA RINNA"))] <- "LISA RINNA"
+  brand_list[which(brand_list %in% c("LIVING DOLL TOPS BLOUSES", "LIVING DOLL"))] <- "LIVING DOLL"
+  brand_list[which(brand_list %in% c("LIZ CLAIBORNE NEW YORK", "LIZ CLAIBORNE"))] <- "LIZ CLAIBORNE"
+  brand_list[which(brand_list %in% c("LIZ LANGE FOR TARGET", "LIZ LANGE MATERNITY", "LIZ LANGE MATERNITY FOR TARGET", "LIZ LANG MATERNITY", "LIZ LANG", "LIZ LANGE"))] <- "LIZ LANGE"
+  brand_list[which(brand_list %in% c("LKBENNETT", "LK BENNETT"))] <- "LK BENNETT"
+  brand_list[which(brand_list %in% c("LLBEAN", "LL BEAN"))] <- "LL BEAN"
+  brand_list[which(brand_list %in% c("LOCOMO DRESSES", "LOCOMO HATS", "LOCOMO LEGGINGS", "LOCOMO OUTERWEARS", "LOCOMO TOPS", "LOCOMO TOPS LUXURY", "LOCOMO"))] <- "LOCOMO"
+  brand_list[which(brand_list %in% c("LOFT TOPS BLOUSES", "LOFT"))] <- "LOFT"
+  brand_list[which(brand_list %in% c("LOGAN MARTIN", "LOGAN AND MARTIN"))] <- "LOGAN AND MARTIN"
+  brand_list[which(brand_list %in% c("LOLE SWIMWEAR", "LOLE"))] <- "LOLE"
+  brand_list[which(brand_list %in% c("LONDON FOG COATS JACKETS", "LONDON FOG"))] <- "LONDON FOG"
+  brand_list[which(brand_list %in% c("LONDON TIMES TOPS BLOUSES", "LONDON TIMES"))] <- "LONDON TIMES"
+  brand_list[which(brand_list %in% c("LONNA LILLY LONNA LILLY", "LONNA LILLY"))] <- "LONNA LILLY"
+  brand_list[which(brand_list %in% c("LOOKBOOK STORE SWIMWEAR", "LOOKBOOKSTORE", "LOOKBOOK STORE"))] <- "LOOKBOOK STORE"
+  brand_list[which(brand_list %in% c("LORD AND TAYLOR SEPARATES", "LORD TAYLOR", "LORD AND TAYLOR"))] <- "LORD AND TAYLOR"
+  brand_list[which(brand_list %in% c("LORNA DREW NURSING LINGERIE", "LORNA DREW"))] <- "LORNA DREW"
+  brand_list[which(brand_list %in% c("LORRAINE LINGERIE", "LORRAINE"))] <- "LORRAINE"
+  brand_list[which(brand_list %in% c("LOUIS RAPHAEL PANTS", "LOUIS RAPHAEL"))] <- "LOUIS RAPHAEL"
+  brand_list[which(brand_list %in% c("LOVE FIRE PANTS", "LOVE FIRE TOPS BLOUSES", "LOVE FIRE"))] <- "LOVE FIRE"
+  brand_list[which(brand_list %in% c("LOVE SCARLETT SWEATERS", "LOVE SCARLETT"))] <- "LOVE SCARLETT"
+  brand_list[which(brand_list %in% c("LOVE TOKEN SWEATERS", "LOVE TOKEN"))] <- "LOVE TOKEN"
+  brand_list[which(brand_list %in% c("LOVEADY JUMPSUITS ROMPERS", "LOVEADY"))] <- "LOVEADY"
+  return(brand_list)
+}  
+  
+  
+brand_names_M <- function(brand_list) {
+  brand_list[which(brand_list %in% c("MAIDENFORM", "MAIDENFORM GIRL"))] <- "MAIDENFORM"
+  brand_list[which(brand_list %in% c("MED COUTURE", "MEDCOUTURE"))] <- "MED COUTURE"
+  brand_list[which(brand_list %in% c("MICHAEL MICHAEL KORS", "MICHAEL KORS ACCESS", "MICHAEL KORS CASUAL SHIRTS", "MICHAEL KORS COATS JACKETS", 
+                                     "MICHAEL KORS COLLECTION", "MICHAEL KORS PANTS", "MICHAEL KORS SUITS SUIT SEPARATES", "MICHAEL KORS SWIMWEAR", 
+                                     "MICHAEL KORS TIES", "MICHAEL KORS TOPS BLOUSES", "MICHAEL MICHAEL KORES STUDIO", "MICHAEL MICHAEL KORS STUDIO",
+                                     "MICHAEL MICHAEL KORS SWEATERS", "MICHAEL MICHAEL KORS TOPS BLOUSES"))] <- "MICHAEL KORS"
+  brand_list[which(brand_list %in% c("MINNIE MOUSE", "MINNIE MOUSE  DIS"))] <- "MINNIE MOUSE"
+  brand_list[which(brand_list %in% c("MILLY", "MILLY CABANA", "MILLY MINIS"))] <- "MILLY"
+  brand_list[which(brand_list %in% c( "MACHERIE", "MA CHERIE MATERNITY", "MA CHERIE"))] <- "MA CHERIE"
+brand_list[which(brand_list %in% c( "MACHENRY ORIGINALS", "MACHENRY"))] <- "MACHENRY"
+brand_list[which(brand_list %in% c( "MACYS STAR SIGNATURE DIAMOND", "MACYS MACYS", "MACYS"))] <- "MACYS"
+brand_list[which(brand_list %in% c( "MADE BY JOHNNY TOPS BLOUSES", "MADE BY JOHNNY"))] <- "MADE BY JOHNNY"
+brand_list[which(brand_list %in% c( "MADEFORIMPULSEFW", "MADE FOR IMPULSE"))] <- "MADE FOR IMPULSE"
+brand_list[which(brand_list %in% c( "MADEWELL JEANS", "MADEWELL SWEATERS", "MADEWELL TOPS BLOUSES", "MADEWELL"))] <- "MADEWELL"
+brand_list[which(brand_list %in% c( "MAGIC SILK EXPOSED", "MAGIC SILK LINGERIE", "MAGIC SILK"))] <- "MAGIC SILK"
+brand_list[which(brand_list %in% c( "MAGICSUIT", "MAGICSUIT BY MIRACLESUIT", "MAGIC SUIT"))] <- "MAGIC SUIT"
+brand_list[which(brand_list %in% c( "MAIDENFORM ACCESSORIES", "MAIDENFORM LINGERIE", "MAIDENFORM SELF EXPRESSIONS", "MAIDENFORM SWEET NOTHINGS", "MAIDENFROM", "MAIDENFORM"))] <- "MAIDENFORM"
+brand_list[which(brand_list %in% c( "MALEBASICS UNDERWEAR", "MALEBASICS"))] <- "MALEBASICS"
+brand_list[which(brand_list %in% c( "MAMAS PAPAS", "MAMAS AND PAPAS"))] <- "MAMAS AND PAPAS"
+brand_list[which(brand_list %in% c( "MANDY MYSTERY LINE","MANDY MYSTERY"))] <- "MANDY MYSTERY"
+brand_list[which(brand_list %in% c( "MARA HOFFMAN SWIMWEAR", "MARA HOFFMAN"))] <- "MARA HOFFMAN"
+brand_list[which(brand_list %in% c( "MARC NEW YORK BY ANDREW MARC", "MARC NEW YORK COATS JACKETS", "MARC NEW YORK PERFORMANCE", "MARC NEW YORK TOPS BLOUSES", "MARC NEW YORK"))] <- "MARC NEW YORK"
+brand_list[which(brand_list %in% c( "MARILYN MONROE INTIMATES", "MARILYN MONROE SWIMWEAR", "MARILYN MONROE"))] <- "MARILYN MONROE"
+brand_list[which(brand_list %in% c( "MARINA RINALDI BY MAX MARA", "MARINA RINALDI PLUS SIZE", "MARINA RINALDI"))] <- "MARINA RINALDI"
+brand_list[which(brand_list %in% c( "MARK NASON LOS ANGELES", "MARK NASON"))] <- "MARK NASON"
+brand_list[which(brand_list %in% c( "MARKS AND SPENCERS", "MARKS AND SPENCERS MATERNITY RANGE", "MARKS AND SPENCERS MS LINGERIE RANGE", "MARKS AND SPENCERS MS WOMAN RANGE", "MARKS SPENCER", "MARKS SPENCER AUTOGRAPH", "MARKS SPENCERS", "MARKS AND SPECNER ACTIVE", "MARKS AND SPENCER ACTIVE", "MARKS AND SPENCER COLLECTION", "MARKS AND SPENCER ROSIE FOR AUTOGRAPH", "MARKS AND SPENCER"))] <- "MARKS AND SPENCER"
+brand_list[which(brand_list %in% c( "MARVEL COMIC", "MARVEL COMICS", "MARVEL COMICS APPAREL", "MARVELCOMICS"))] <- "MARVEL COMICS"
+brand_list[which(brand_list %in% c( "MATEO NEW YORK", "MATEO"))] <- "MATEO"
+brand_list[which(brand_list %in% c( "MATERIAL GIRL ACTIVE", "MATERIALGIRL", "MATERIAL GIRL"))] <- "MATERIAL GIRL"
+brand_list[which(brand_list %in% c( "MAUI SONS", "MAUI AND SONS"))] <- "MAUI AND SONS"
+brand_list[which(brand_list %in% c( "MAX MARA ATELIER", "MAX MARA BEACHWEAR", "MAX MARA COATS JACKETS", "MAX MARA STUDIO", "MAXMARA", "MAX MARA"))] <- "MAX MARA"
+brand_list[which(brand_list %in% c( "MAX STUDIO LONDON", "MAX STUDIO PANTS", "MAX STUDIO SKIRTS", "MAX STUDIO TOPS BLOUSES", "MAXSTUDIO", "MAX STUDIO"))] <- "MAX STUDIO"
+brand_list[which(brand_list %in% c( "MCS JEWELRY EARRING COLLECTION", "MCS JEWELRY"))] <- "MCS JEWELRY"
+brand_list[which(brand_list %in% c( "MELISSA MCCARTHY SEVEN7", "MELISSA MCCARTHY"))] <- "MELISSA MCCARTHY"
+brand_list[which(brand_list %in% c( "MELROSE AND MARKET TOPS BLOUSES", "MELROSE MARKET TOPS BLOUSES", "MELROSE AND MARKET SWEATERS", "MELROSE AND MARKET"))] <- "MELROSE AND MARKETMELROSE AND MARKET"
+brand_list[which(brand_list %in% c( "MENSWALLET", "MENS WALLET"))] <- "MENS WALLET"
+brand_list[which(brand_list %in% c( "MERCEDESAMG", "MERCEDES AMG"))] <- "MERCEDES AMG"
+brand_list[which(brand_list %in% c( "MERREL", "MERRELL"))] <- "MERRELL"
+brand_list[which(brand_list %in% c( "MICHAELKORS", "MICHAEL KORS SWIMWEAR", "MICHAEL KORS TOPS BLOUSES", "MICHAEL MICHAEL KORS STUDIO", "MICHAEL MICHAEL KORS SWEATERS", "MICHAEL MICHAEL KORS TOPS BLOUSES", "MICHAEL KORS CASUAL SHIRTS", "MICHAEL KORS COATS JACKETS", "MICHAEL KORS COLLECTION", "MICHAEL KORS PANTS", "MICAHEL KORS", "MICHAEL KORS"))] <- "MICHAEL KORS"
+brand_list[which(brand_list %in% c( "MICHAEL STARS SWEATERS", "MICHAEL STARS TOPS BLOUSES", "MICHAEL STARS"))] <- "MICHAEL STARS"
+brand_list[which(brand_list %in% c( "MIKOH SWIMWEAR", "MIKOH"))] <- "MIKOH"
+brand_list[which(brand_list %in% c( "MISS SELFRIDGE JUMPSUITS ROMPERS", "MISS SELFRIDGE PETITE", "MISS SELFRIDGE SKIRTS", "MISS SELFRIDGE SWEATERS", "MISS SELFRIDGE TOPS BLOUSES", "MISS SELFRIDGE"))] <- "MISS SELFRIDGE"
+brand_list[which(brand_list %in% c( "MISSFIT ACTIVEWEAR", "MISSFIT"))] <- "MISSFIT"
+brand_list[which(brand_list %in% c( "MITCHELL NESS", "MITCHELL AND NESS"))] <- "MITCHELL AND NESS"
+brand_list[which(brand_list %in% c( "MJC INTERNATIONAL GROUP LLC", "MJC INTERNATIONAL GROUP LLC", "MJC INTERNATIONAL"))] <- "MJC INTERNATIONAL"
+brand_list[which(brand_list %in% c( "MOA MOA TOPS BLOUSES", "MOA MOA"))] <- "MOA MOA"
+brand_list[which(brand_list %in% c( "MODA INTERNATIONAL", "MODA"))] <- "MODA"
+brand_list[which(brand_list %in% c( "MOJITO COLLECTION", "MOJITO SIGNATURE", "MOJITO"))] <- "MOJITO"
+brand_list[which(brand_list %in% c( "MOJO SPORTSWEAR COMPANY", "MOJO SPORTSWEAR"))] <- "MOJO SPORTSWEAR"
+brand_list[which(brand_list %in% c( "MOMO MATERNITY", "MOMO"))] <- "MOMO"
+brand_list[which(brand_list %in% c( "MONIQUE LHUILLIER BRIDESMAIDS", "MONIQUE LHUILLIER"))] <- "MONIQUE LHUILLIER"
+brand_list[which(brand_list %in% c( "MONTEAU COATS JACKETS", "MONTEAU TOPS BLOUSES", "MONTEAU"))] <- "MONTEAU"
+brand_list[which(brand_list %in% c( "MONTELLE INTIMATES", "MONTELLE"))] <- "MONTELLE"
+brand_list[which(brand_list %in% c( "MONTEREY", "MONTEREY CLUB"))] <- "MONTEREY CLUB"
+brand_list[which(brand_list %in% c( "MOON SHINE CAMO", "MOONSHINE"))] <- "MOONSHINE"
+brand_list[which(brand_list %in% c( "MOPAS CLOTHING", "MOPAS"))] <- "MOPAS"
+brand_list[which(brand_list %in% c( "MOTHERBEE", "MOTHER BEE APPAREL", "MOTHER BEE MATERNITY", "MOTHER BEE"))] <- "MOTHER BEE"
+brand_list[which(brand_list %in% c( "MOTHERHOOD OH BABY", "MOTHERHOOD MATERNITY", "MOTHERHOOD INTIMATES", "MOTHERHOOD"))] <- "MOTHERHOOD"
+brand_list[which(brand_list %in% c( "MSK WOMEN", "MSK TOPS BLOUSES", "MSK"))] <- "MSK"
+brand_list[which(brand_list %in% c( "MUCK BOOT", "MUCK BOOT COMPANY", "MUCKBOOTS", "MUCK BOOTS"))] <- "MUCK BOOTS"
+brand_list[which(brand_list %in% c( "MUDDYFOX", "MUDDY FOX"))] <- "MUDDY FOX"
+brand_list[which(brand_list %in% c( "MUSIC LEGGS", "MUSICLEGS", "MUSIC LEGS"))] <- "MUSIC LEGS"
+  return(brand_list)
+}  
+
+
+brand_names_N <- function(brand_list) {
+  brand_list[which(brand_list %in% c("NIKE", "NIKE ACG", "NIKE ATHLETICS", "NIKE DRI FIT", "NIKE DRIFIT", "NIKE GOLF", 
+                                     "NIKE MARIKA FILA", "NIKE PRO", "NIKE SB", "NIKE SPORTSWEAR", "NIKELAB"))] <- "NIKE"
+                                     brand_list[which(brand_list %in% c( "NAKED FAMOUS DENIM", "NAKED FAMOUS"))] <- "NAKED FAMOUS"
+brand_list[which(brand_list %in% c( "NALLY MILLIE SWEATERS", "NALLY MILLIE TOPS BLOUSES", "NALLY MILLIE"))] <- "NALLY MILLIE"
+brand_list[which(brand_list %in% c( "NANCY KING LINGERIE", "NANCY KING"))] <- "NANCY KING"
+brand_list[which(brand_list %in% c( "NANETTE LEPORE SWIMWEAR", "NANETTE NANETTE LEPORE", "NANETTELEPORE", "NANETTE LEPORE"))] <- "NANETTE LEPORE"
+brand_list[which(brand_list %in% c( "NATURALBRA", "NATURAL BRA"))] <- "NATURAL BRA"
+brand_list[which(brand_list %in% c( "NATURE INTIMATE", "NATURE INTIMATES"))] <- "NATURE INTIMATES"
+brand_list[which(brand_list %in% c( "NAUTICA SHORTS", "NAUTICA SLEEPWEAR ROBES", "NAUTICA SWEATERS", "NAUTICA SWIMWEAR", "NAUTICA"))] <- "NAUTICA"
+brand_list[which(brand_list %in% c( "NEONBUDDHA", "NEON BUDDHA"))] <- "NEON BUDDHA"
+brand_list[which(brand_list %in% c( "NEW ADDITION MATERNITY", "NEW ADDITIONS", "NEW ADDITIONS MATERNITY", "NEW ADDITION"))] <- "NEW ADDITION"
+brand_list[which(brand_list %in% c( "NEWBALANCE", "NEW BALANCE NB", "NEW BALANCE"))] <- "NEW BALANCE"
+brand_list[which(brand_list %in% c( "NEW RECRUIT MATERNITY", "NEW RECRUIT"))] <- "NEW RECRUIT"
+brand_list[which(brand_list %in% c( "NEW YORK CO", "NEW YORK COMPANY", """NEW YORK AND COMPANY"))] <- "NEW YORK AND COMPANY"
+brand_list[which(brand_list %in% c( "NEXTLEVEL", "NEXT LEVEL"))] <- "NEXT LEVEL"
+brand_list[which(brand_list %in% c( "NICK GRAHAM DRESS SHIRTS", "NICK GRAHAM"))] <- "NICK GRAHAM"
+brand_list[which(brand_list %in% c( "NICOLE MILLER NEW YORK", "NICOLE MILLER STUDIO", "NICOLE MILLER"))] <- "NICOLE MILLER"
+brand_list[which(brand_list %in% c( "NICZOE SWEATERS", "NICZOE"))] <- "NICZOE"
+brand_list[which(brand_list %in% c( "NIKE AIR", "NIKE AIR JORDAN", "NIKE BASKETBALL", "NIKE GOLF DRIFIT", "NIKE JORDAN", "NIKE NIKE", "NIKE"))] <- "NIKE"
+brand_list[which(brand_list %in% c( "NINE WEST COATS JACKETS", "NINE WEST DRESSES", "NINE WEST HOLDINGS INC", "NINE WEST PANTS", "NINE WEST SKIRTS", "NINE WEST SUITS BLAZERS", "NINE WEST TOPS BLOUSES", "NINE WEST"))] <- "NINE WEST"
+brand_list[which(brand_list %in% c( "NOLI YOGA", "NOLI"))] <- "NOLI"
+brand_list[which(brand_list %in% c( "NOM MATERNITY", "NOM"))] <- "NOM"
+brand_list[which(brand_list %in% c( "NOPPIES MATERNITY", "NOPPIES"))] <- "NOPPIES"
+brand_list[which(brand_list %in% c( "NORCROSS SAFETY PROD", "NORCROSS SAFETY"))] <- "NORCROSS SAFETY"
+brand_list[which(brand_list %in% c( "NORDICTRACK", "NORDIC TRACK"))] <- "NORDIC TRACK"
+brand_list[which(brand_list %in% c( "NORDSTROM", "NORDSTROM COATS JACKETS", "NORDSTROM COLLECTION COATS JACKETS", "NORDSTROM INTIMATES", "NORDSTROM LINGERIE", "NORDSTROM RACK DRESS SHIRTS", "NORDSTROM SIGNATURE COATS JACKETS", "NORDSTROM SIGNATURE SKIRTS", "NORDSTROM SIGNATURE TOPS BLOUSES", "NORDSTROM SKIRTS", "NORDSTROMS"))] <- "NORDSTROM"
+brand_list[which(brand_list %in% c( "NORMA KAMALI SWIMWEAR", "NORMA KAMALI"))] <- "NORMA KAMALI"
+brand_list[which(brand_list %in% c( "NOUVELLE COLLECTION", "NOUVELLE"))] <- "NOUVELLE"
+  return(brand_list)
+}  
+
+  
+brand_names_P <- function(brand_list) {  
+  brand_list[which(brand_list %in% c("POOF", "POOF  SLINKY", "POOF APPAREL", "POOFSLINKY"))] <- "POOF"
+  return(brand_list)
+}  
+  
+brand_names_R <- function(brand_list) {
+  brand_list[which(brand_list %in% c("RACHEL RACHEL ROY"))] <- "RACHEL ROY"   
+  brand_list[which(brand_list %in% c("LRL LAUREN ACTIVE", "LAUREN RALPH LAUREN", "LAUREN RALPH LAUREN ACTIVE", "LAURENBYRALPHLAUREN", "LAURENPOLO RALPH LAUREN", "LAUREN JEANS CO", 
+                                     "LAUREN ACTIVE", "LAUREN ACTIVE RALPH LAUREN", "LAUREN BY RALPH LAUREN", "LAUREN BY RALPH LAUREN COATS JACKETS", "LAUREN BY RALPH LAUREN DRESSES", 
+                                     "LAUREN BY RALPH LAUREN JEANS", "LAUREN BY RALPH LAUREN JUMPSUITS ROMPERS", "LAUREN BY RALPH LAUREN PANTS", "LAUREN BY RALPH LAUREN SKIRTS", 
+                                     "LAUREN BY RALPH LAUREN SWEATERS", "LAUREN BY RALPH LAUREN SWIMWEAR","LAUREN BY RALPH LAUREN TOPS BLOUSES", "LAUREN RALPH LAUREN ACTIVE", 
+                                     "LAURENBYRALPHLAUREN", "LAURENPOLO RALPH LAUREN", "LAUREN RALPH LAUREN PETITES", "LAUREN BY RALPH LAUREN SUITS SUIT SEPARATES", "RALPH RALPH LAUREN",
+                                     "RALPHLAUREN", "RALPH LAUREN SPORT", "RALPH LAUREN RUGBY", "RALPH LAUREN RRL", "RALPH LAUREN RLX", "RALPH LAUREN PURPLE LABEL", "RALPH LAUREN POLO SPORT",
+                                     "RALPH LAUREN POLO GOLF", "RALPH LAUREN POLO", "RALPH LAUREN GOLF", "RALPH LAUREN DS", "RALPH LAUREN DENIM SUPPLY", "RALPH LAUREN D S", "RALPH LAUREN COLLECTION",
+                                     "RALPH LAUREN CHILDRENSWEAR", "RALPH LAUREN CHAPS", "RALPH LAUREN CASUAL SHIRTS", "RALPH LAUREN BLUE LABEL", "RALPH LAUREN BLACK LABEL", "RALPH LAUREN ACTIVE",
+                                     "RALPH BY RALPH LAUREN", "RLX RALPH LAUREN", "RLX", "RLX GOLF", "DENIMSUPPLY", "DENIM  SUPPLY RALPH LAUREN", "POLO RALPH LAUREN", "RALPH LAUREN", "LAUREN RALPH LAUREN"))] <- "RALPH LAUREN"
+ 
+  return(brand_list)
+} 
+  
+  
+brand_names_S <- function(brand_list) {    
+  brand_list[which(brand_list %in% c("SAKS FIFTH AVENUE", "SAKSFIFTHAVENUE", "SAKS FIFTH AVENUE COLLECTION", "SAKS FIFTH AVENUE PLUS SIZE", "SAKS FIFTH AVENUE RED",
+                                     "SAKS FIFTH AVENUE X ANTHONY DAVIS", "SAKS FIFTH AVENUE X TRAIANO"))] <- "SAKSFIFTH"
+  brand_list[which(brand_list %in% c("SEXY DANCE", "SEXYDANCE"))] <- "SEXY DANCE"
+  brand_list[which(brand_list %in% c("SCOTCH SODA", "SCOTCH SODAMAISON SCOTCH"))] <- "SCOTCH SODA"
+  brand_list[which(brand_list %in% c("SEEK NO FURTHER BY FRUIT OF THE LOOM", "FRUIT OF THE LOOM"))] <- "FRUIT OF THE LOOM"
+  brand_list[which(brand_list %in% c("SPORTMAX", "SPORTMAX CODE"))] <- "SPORTMAX"
+  brand_list[which(brand_list %in% c("STAR WARS", "STAR WARS CLONE WARS"))] <- "STAR WARS"
+  brand_list[which(brand_list %in% c("STEVE MADDEN", "STEVEN BY STEVE MADDEN"))] <- "STEVE MADDEN"
+  brand_list[which(brand_list %in% c("SUPER HEROES", "SUPER HEROES  VILLAINS"))] <- "SUPER HEROES"
+  brand_list[which(brand_list %in% c("SWEET VIBES", "SWEETVIBES"))] <- "SWEET VIBES"
+  return(brand_list)
+}    
+  
+
+brand_names_T <- function(brand_list) { 
+  brand_list[which(brand_list %in% c("THYME  HONEY", "THYME AND HONEY"))] <- "THYME AND HONEY"
+  brand_list[which(brand_list %in% c("TOMMY HILFIGER", "TOMMY HILFIGER ADAPTIVE", "TOMMY HILFIGER DENIM", "TOMMY HILFIGER SPORT", "TOMMY JEANS CAPSULE", 
+                                     "TOMMYFIT", "HILFIGER COLLECTION", "HILFIGER EDITION", "TOMMY ARMOUR", "TOMMY BAHAMA", "TOMMY BAHAMA HOME",
+                                     "TOMMY BAHAMA SWEATERS", "TOMMY BAHAMA SWIMWEAR", "TOMMY BAHAMAS", "TOMMY BOY", "TOMMY HILFIGER COLLECTION",
+                                     "TOMMY HILFIGER GOLF", "TOMMY HILFIGER PANTS", "TOMMY HILFIGER SUITS SUIT SEPARATES", "TOMMY HILFIGER TIES",
+                                     "TOMMY HILFIGER X GIGI", "TOMMY JEANS", "TOMMY JOHN", "TOMMY X ZENDAYA", "TOMMYHILFIGER", "TOMMYWAY JEWELRY"))] <- "TOMMY HILFIGER"
+  brand_list[which(brand_list %in% c("TRANQUILITY", "TRANQUILITY BY COLORADO CLOTHING"))] <- "TRANQUILITY"
+  return(brand_list)
+}  
+
+
+brand_names_V <- function(brand_list) {  
+  brand_list[which(brand_list %in% c("VANHEUSEN", "VAN HEUSEN DRESS SHIRTS", "VAN HEUSEN PANTS"))] <- "VAN HEUSEN"  
+  brand_list[which(brand_list %in% c("VICTORIA BECKHAM", "VICTORIA VICTORIA BECKHAM"))] <- "VICTORIA BECKHAM" 
+  brand_list[which(brand_list %in% c("VICTORIA COLLECTION", "VICTORIA S" ,"VICTORIA SECRET" ,"VICTORIA SECRET PINK", "VICTORIA SECRET SPORT", "VICTORIA SECRETS", 
+                                     "VICTORIA SHOES", "VICTORIA SPORT", "VICTORIA STATION", "VICTORIAS MASQUERADE", "VICTORIAS SECRET ANGELS", "VICTORIAS SECRET PINK", 
+                                     "VICTORIAS SECRET SEXY LITTLE THINGS", "VICTORIAS SECRET SPORT", "VICTORIAS SECRET VERY SEXY", "VICTORIAS SECRET VICTORIA SPORT", 
+                                     "VICTORIAS SECRET VICTORIA SPORT BRA", "VICTORIAS SECRET VSX", "VICTORIAS SECRET VSX INCREDIBLE", "VICTORIAS SECRET VSX SPORT",
+                                     "VICTORIAS SECRET X MARY KATRANTZOU", "VICTORIAS SECRET X MARY KATRANTZOU", "VICTORIAS SECRET X SWAROVSKI", "VICTORIAS SECRETS", 
+                                     "VICTORIASL", "VICTORIASSECRET", "VS", "VS PINK", "VS SECRET", "VS SOFRA", "VSECRET", "VSNOW", "VSX", "VSX SPORT", 
+                                     "VSX VICTORIAS SECRET"))] <- "VICTORIAS SECRET"
+  return(brand_list)
+}    
+  
+  
+brand_names_W <- function(brand_list) {    
+  brand_list[which(brand_list %in% c("THE WALKING DEAD", "WALKING DEAD"))] <- "WALKING DEAD"
+  brand_list[which(brand_list %in% c("WHITE SWAN", "WHITE SWAN FUNDAMENTALS"))] <- "WHITE SWAN"
+  brand_list[which(brand_list %in% c("WONDER WOMAN", "WONDERWOMAN"))] <- "WONDERWOMAN"
+  return(brand_list)
+}  
+  
+  
+brand_names_X <- function(brand_list) {    
+  brand_list[which(brand_list %in% c("X BY XSCAPE", "XSCAPE"))] <- "XSCAPE"
+  return(brand_list)
+}    
+  
+  
+brand_names_Y <- function(brand_list) {  
+  brand_list[which(brand_list %in% c("YUMMIE", "YUMMIE BY HEATHER THOMPSON", "YUMMIE BY HEATHER THOMSON", 
+                                     "YUMMIE TUMMIE"))] <- "YUMMIE"  
+  return(brand_list)
+}                                       
+                                     
+  
+brand_names_Z <- function(brand_list) {    
+  brand_list[which(brand_list %in% c("ZEXPA", "ZEXPA APPAREL"))] <- "ZEXPA"
+  brand_list[which(brand_list %in% c("ZONE APPAREL", "ZONE APPAREL HUNTING AND OUTDOOR"))] <- "ZONE APPAREL"
+  return(brand_list)
+}    

@@ -1,0 +1,416 @@
+[
+  {
+    "cluster_id": 0,
+    "size_share": 0.1254,
+    "median_price": 43.71,
+    "price_tier_mix": {
+      "mid": 1.0
+    },
+    "gender_mix": {
+      "women": 1.0
+    },
+    "top_categories": {
+      "accessories": 1.0
+    },
+    "top_classes": {
+      "jewelry": 1.0
+    },
+    "top_brands": [
+      "RANDOMSELLER7723",
+      "LEVI S",
+      "COLUMBIA",
+      "UNDER ARMOUR",
+      "NIKE PERFORMANCE",
+      "ADIDAS",
+      "WRANGLER",
+      "ALLEN SCHWARTZ",
+      "GUCCI",
+      "RALPH LAUREN"
+    ],
+    "example_titles": [
+      "Ralph Lauren Wool Blend Cardigan Sweater",
+      "ABS BY ALLEN SCHWARTZ Bikini Swimwear Two Piece",
+      "Ralph Lauren Bikini Swimwear Two Piece",
+      "Patagonia Wool Blend Cardigan Sweater",
+      "ABS BY ALLEN SCHWARTZ Bikini Swimwear Two Piece"
+    ]
+  },
+  {
+    "cluster_id": 1,
+    "size_share": 0.0753,
+    "median_price": 100.27,
+    "price_tier_mix": {
+      "premium": 1.0
+    },
+    "gender_mix": {
+      "unisex": 1.0
+    },
+    "top_categories": {
+      "footwear": 1.0
+    },
+    "top_classes": {
+      "athletic": 1.0
+    },
+    "top_brands": [
+      "LEVI S",
+      "NIKE PERFORMANCE",
+      "UNDER ARMOUR",
+      "ALLEN SCHWARTZ",
+      "CALVIN KLEIN",
+      "PATAGONIA",
+      "WRANGLER",
+      "COLUMBIA",
+      "OLD NAVY",
+      "RALPH LAUREN"
+    ],
+    "example_titles": [
+      "Under Armour Running Shoes Lightweight Sneakers",
+      "Wrangler Running Shoes Lightweight Sneakers",
+      "ADIDAS GOLF Running Shoes Lightweight Sneakers",
+      "Nike Performance Running Shoes Lightweight Sneakers",
+      "Old Navy Running Shoes Lightweight Sneakers"
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "size_share": 0.1267,
+    "median_price": 120.0,
+    "price_tier_mix": {
+      "premium": 1.0
+    },
+    "gender_mix": {
+      "women": 1.0
+    },
+    "top_categories": {
+      "accessories": 1.0
+    },
+    "top_classes": {
+      "jewelry": 1.0
+    },
+    "top_brands": [
+      "RALPH LAUREN",
+      "WRANGLER",
+      "ADIDAS",
+      "RANDOMSELLER7723",
+      "GUCCI",
+      "COLUMBIA",
+      "UNDER ARMOUR",
+      "ALLEN SCHWARTZ",
+      "NIKE PERFORMANCE",
+      "OLD NAVY"
+    ],
+    "example_titles": [
+      "Patagonia Wool Blend Cardigan Sweater",
+      "ABS BY ALLEN SCHWARTZ Leather Crossbody Bag Handbag",
+      "Ralph Lauren Wool Blend Cardigan Sweater",
+      "Ralph Lauren Winter Down Parka Coat Insulated",
+      "Patagonia Wool Blend Cardigan Sweater"
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "size_share": 0.0801,
+    "median_price": 16.36,
+    "price_tier_mix": {
+      "value": 1.0
+    },
+    "gender_mix": {
+      "men": 0.876,
+      "women": 0.124
+    },
+    "top_categories": {
+      "accessories": 1.0
+    },
+    "top_classes": {
+      "jewelry": 1.0
+    },
+    "top_brands": [
+      "COLUMBIA",
+      "GUCCI",
+      "ADIDAS",
+      "RALPH LAUREN",
+      "HANES",
+      "WRANGLER",
+      "CALVIN KLEIN",
+      "RANDOMSELLER7723"
+    ],
+    "example_titles": [
+      "Calvin Klein Cotton Crew Neck T-Shirt",
+      "Ralph Lauren Men's Short Sleeve Fishing Shirt UV Protection",
+      "Columbia Cotton Crew Neck T-Shirt",
+      "Columbia Cotton Crew Neck T-Shirt",
+      "Columbia Cotton Crew Neck T-Shirt"
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "size_share": 0.0965,
+    "median_price": 46.46,
+    "price_tier_mix": {
+      "mid": 1.0
+    },
+    "gender_mix": {
+      "men": 1.0
+    },
+    "top_categories": {
+      "upperbody": 1.0
+    },
+    "top_classes": {
+      "polos": 1.0
+    },
+    "top_brands": [
+      "NIKE PERFORMANCE",
+      "PATAGONIA",
+      "OLD NAVY",
+      "ADIDAS",
+      "LEVI S",
+      "COLUMBIA",
+      "GUCCI",
+      "WRANGLER",
+      "CALVIN KLEIN",
+      "HANES"
+    ],
+    "example_titles": [
+      "Calvin Klein Performance Polo Collared Shirt",
+      "Wrangler Performance Polo Collared Shirt",
+      "Nike Performance Performance Polo Collared Shirt",
+      "Under Armour Performance Polo Collared Shirt",
+      "Nike Performance Performance Polo Collared Shirt"
+    ]
+  },
+  {
+    "cluster_id": 5,
+    "size_share": 0.0994,
+    "median_price": 40.44,
+    "price_tier_mix": {
+      "mid": 0.982,
+      "value": 0.018
+    },
+    "gender_mix": {
+      "women": 1.0
+    },
+    "top_categories": {
+      "lowerbody": 1.0
+    },
+    "top_classes": {
+      "leggings": 1.0
+    },
+    "top_brands": [
+      "UNDER ARMOUR",
+      "RALPH LAUREN",
+      "COLUMBIA",
+      "PATAGONIA",
+      "ADIDAS",
+      "GUCCI",
+      "ALLEN SCHWARTZ",
+      "OLD NAVY",
+      "RANDOMSELLER7723",
+      "NIKE PERFORMANCE"
+    ],
+    "example_titles": [
+      "Columbia Women's High Waist Yoga Leggings",
+      "Under Armour Women's High Waist Yoga Leggings",
+      "Calvin Klein Women's High Waist Yoga Leggings",
+      "Patagonia Women's High Waist Yoga Leggings",
+      "Old Navy Women's High Waist Yoga Leggings"
+    ]
+  },
+  {
+    "cluster_id": 6,
+    "size_share": 0.1431,
+    "median_price": 39.09,
+    "price_tier_mix": {
+      "mid": 1.0
+    },
+    "gender_mix": {
+      "men": 1.0
+    },
+    "top_categories": {
+      "accessories": 1.0
+    },
+    "top_classes": {
+      "jewelry": 1.0
+    },
+    "top_brands": [
+      "OLD NAVY",
+      "RANDOMSELLER7723",
+      "LEVI S",
+      "UNDER ARMOUR",
+      "WRANGLER",
+      "ADIDAS",
+      "ALLEN SCHWARTZ",
+      "RALPH LAUREN",
+      "GUCCI",
+      "COLUMBIA"
+    ],
+    "example_titles": [
+      "ABS BY ALLEN SCHWARTZ Classic Fit Denim Jeans",
+      "Gucci Classic Fit Denim Jeans",
+      "Columbia Classic Fit Denim Jeans",
+      "Columbia Men's Short Sleeve Fishing Shirt UV Protection",
+      "Under Armour Classic Fit Denim Jeans"
+    ]
+  },
+  {
+    "cluster_id": 7,
+    "size_share": 0.0325,
+    "median_price": 151.79,
+    "price_tier_mix": {
+      "premium": 1.0
+    },
+    "gender_mix": {
+      "women": 1.0
+    },
+    "top_categories": {
+      "accessories": 1.0
+    },
+    "top_classes": {
+      "jewelry": 1.0
+    },
+    "top_brands": [
+      "HANES",
+      "CALVIN KLEIN"
+    ],
+    "example_titles": [
+      "Hanes Leather Crossbody Bag Handbag",
+      "Hanes Winter Down Parka Coat Insulated",
+      "Calvin Klein Winter Down Parka Coat Insulated",
+      "Hanes Winter Down Parka Coat Insulated",
+      "Hanes Winter Down Parka Coat Insulated"
+    ]
+  },
+  {
+    "cluster_id": 8,
+    "size_share": 0.0284,
+    "median_price": 65.7,
+    "price_tier_mix": {
+      "mid": 1.0
+    },
+    "gender_mix": {
+      "unisex": 1.0
+    },
+    "top_categories": {
+      "footwear": 1.0
+    },
+    "top_classes": {
+      "athletic": 1.0
+    },
+    "top_brands": [
+      "ALLEN SCHWARTZ",
+      "LEVI S",
+      "UNDER ARMOUR",
+      "CALVIN KLEIN",
+      "PATAGONIA",
+      "ADIDAS",
+      "WRANGLER",
+      "HANES",
+      "RALPH LAUREN",
+      "GUCCI"
+    ],
+    "example_titles": [
+      "Patagonia Running Shoes Lightweight Sneakers",
+      "ADIDAS GOLF Running Shoes Lightweight Sneakers",
+      "Levi's Running Shoes Lightweight Sneakers",
+      "Wrangler Running Shoes Lightweight Sneakers",
+      "Gucci Running Shoes Lightweight Sneakers"
+    ]
+  },
+  {
+    "cluster_id": 9,
+    "size_share": 0.0413,
+    "median_price": 41.48,
+    "price_tier_mix": {
+      "mid": 1.0
+    },
+    "gender_mix": {
+      "men": 0.554,
+      "women": 0.446
+    },
+    "top_categories": {
+      "accessories": 1.0
+    },
+    "top_classes": {
+      "jewelry": 1.0
+    },
+    "top_brands": [
+      "CALVIN KLEIN",
+      "HANES"
+    ],
+    "example_titles": [
+      "Calvin Klein Wool Blend Cardigan Sweater",
+      "Hanes Wool Blend Cardigan Sweater",
+      "Hanes Classic Fit Denim Jeans",
+      "Hanes Classic Fit Denim Jeans",
+      "Hanes Men's Short Sleeve Fishing Shirt UV Protection"
+    ]
+  },
+  {
+    "cluster_id": 10,
+    "size_share": 0.0855,
+    "median_price": 213.55,
+    "price_tier_mix": {
+      "premium": 1.0
+    },
+    "gender_mix": {
+      "women": 1.0
+    },
+    "top_categories": {
+      "accessories": 1.0
+    },
+    "top_classes": {
+      "jewelry": 1.0
+    },
+    "top_brands": [
+      "PATAGONIA",
+      "LEVI S",
+      "OLD NAVY",
+      "ALLEN SCHWARTZ",
+      "NIKE PERFORMANCE",
+      "UNDER ARMOUR",
+      "GUCCI",
+      "COLUMBIA",
+      "RANDOMSELLER7723",
+      "ADIDAS"
+    ],
+    "example_titles": [
+      "ADIDAS GOLF Winter Down Parka Coat Insulated",
+      "Columbia Leather Crossbody Bag Handbag",
+      "Ralph Lauren Winter Down Parka Coat Insulated",
+      "Columbia Winter Down Parka Coat Insulated",
+      "Gucci Winter Down Parka Coat Insulated"
+    ]
+  },
+  {
+    "cluster_id": 11,
+    "size_share": 0.0657,
+    "median_price": 16.91,
+    "price_tier_mix": {
+      "value": 1.0
+    },
+    "gender_mix": {
+      "men": 0.892,
+      "women": 0.108
+    },
+    "top_categories": {
+      "accessories": 1.0
+    },
+    "top_classes": {
+      "jewelry": 1.0
+    },
+    "top_brands": [
+      "OLD NAVY",
+      "LEVI S",
+      "ALLEN SCHWARTZ",
+      "UNDER ARMOUR",
+      "NIKE PERFORMANCE",
+      "PATAGONIA"
+    ],
+    "example_titles": [
+      "Old Navy Cotton Crew Neck T-Shirt",
+      "Patagonia Cotton Crew Neck T-Shirt",
+      "Nike Performance Cotton Crew Neck T-Shirt",
+      "Nike Performance Men's Short Sleeve Fishing Shirt UV Protection",
+      "Nike Performance Cotton Crew Neck T-Shirt"
+    ]
+  }
+]

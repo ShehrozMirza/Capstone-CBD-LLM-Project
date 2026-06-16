@@ -1,0 +1,20 @@
+# data artifacts (heavy / regenerable) -- never commit the corpus
+data/raw/*
+data/interim/*
+data/processed/*
+!data/**/.gitkeep
+
+# but DO commit reference files
+!data/reference/
+data/reference/brand_dicitonary.txt   # commit the source R file
+data/reference/brand_map.json          # generated, but small + reproducible
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# os
+.DS_Store
