@@ -18,3 +18,7 @@ venv/
 
 # os
 .DS_Store
+
+# node
+node_modules/
+presentation/package-lock.json
