@@ -17,6 +17,7 @@ Runs locally on a normal laptop (8–16 GB RAM). The runnable codebase makes **z
   - [Stage 5 – Campaign Generation](#stage-5--campaign-generation)
   - [Stage 6 – Valuation (CLV Model)](#stage-6--valuation-clv-model)
   - [LLM Integration Points](#llm-integration-points)
+- [Presentation](#presentation)
 - [Repository Layout](#repository-layout)
 - [Key Design Decisions](#key-design-decisions)
 - [Outputs](#outputs)
@@ -227,6 +228,40 @@ flowchart LR
     style LLM1 fill:#fff3cd,stroke:#ff9800,stroke-width:2px
     style LLM2 fill:#fff3cd,stroke:#ff9800,stroke-width:2px
 ```
+
+---
+
+## Presentation
+
+The capstone presentation is available as a PowerPoint file at [presentation/Amazon_Apparel_Capstone.pptx](presentation/Amazon_Apparel_Capstone.pptx).
+
+It was generated programmatically from the pipeline data using [`presentation/build_ppt.js`](presentation/build_ppt.js) (Node.js + pptxgenjs). To regenerate it:
+
+```bash
+cd presentation
+npm install
+node build_ppt.js
+```
+
+### Slide Outline (15 slides)
+
+| # | Slide | Coverage |
+|---|-------|----------|
+| 1 | **Cover** | Project title, 4 headline stats |
+| 2 | **Problem & Framing** | Business problem, our framing, end-to-end pipeline flow |
+| 3 | **The Data** | Record schema, two relationship signals (BW1/BW2), noise challenge, 70/30 split |
+| 4 | **Handling Scale** | Streaming ingest, DuckDB out-of-core, disk-persisted intermediates |
+| 5 | **Intelligence Layers** | Taxonomy, brand standardization, relationship graph — side by side |
+| 6 | **Segmentation** | 5-step flow from products → 12 taste neighborhoods |
+| 7 | **12 Profiles Grid** | All 12 profiles with derived names, tier, categories, brands, catalogue share |
+| 8 | **Profile Deep-Dives** | Outerwear Enthusiast · Fitness-Forward Woman · Everyday Denim Dad |
+| 9 | **Campaign Design** | Affinity scoring formula, seasonality logic, output schema |
+| 10 | **Cadence vs Frequency** | 52 offers ≠ 52 purchases — fatigue decay and annual purchase cap |
+| 11 | **Conversion Model** | 5-factor model: base × affinity × price-fit × season × fatigue |
+| 12 | **Valuation Table** | All 12 profiles sorted by CLV with avg order value and expected orders |
+| 13 | **Results at a Glance** | 6 headline KPIs + standout deals |
+| 14 | **Limitations** | No transaction log · forced k=12 · holdout stub · assumption-driven priors |
+| 15 | **Appendix** | Repo layout, reproducibility, config.yaml parameters |
 
 ---
 
