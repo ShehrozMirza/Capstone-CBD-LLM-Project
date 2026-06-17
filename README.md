@@ -347,7 +347,7 @@ amazon-apparel-capstone/
 
 ## Limitations
 
-> Be honest in the presentation deck.
+
 
 - **No transaction log** — conversion is a *modelled, defended* estimate, not a measurement. All assumptions are in `config.yaml`.
 - **KMeans forces exactly 12 clusters** — HDBSCAN would let the cluster count emerge from the data.
